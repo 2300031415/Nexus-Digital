@@ -53,7 +53,7 @@ export default function LeadGenHero() {
           className="relative flex items-center justify-center"
         >
           <Image 
-            src="/Catalog/Leadgeneration_1.png" 
+            src="/Catalog/lead 1.png" 
             alt="Lead Generation Results" 
             width={800} 
             height={600}

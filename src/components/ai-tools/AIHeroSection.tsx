@@ -69,7 +69,7 @@ const AIHeroSection = () => {
           >
             <div className="rounded-3xl shadow-2xl border border-[#E2E8F0] overflow-hidden">
               <Image 
-                src="/Catalog/AiTools_1.png" 
+                src="/Catalog/lead 1.png" 
                 alt="AI Business Tools" 
                 width={800} 
                 height={600}

@@ -44,7 +44,7 @@ export function WdHero() {
           className="relative flex items-center justify-center"
         >
           <Image 
-            src="/Catalog/webdesignpackage_1.png" 
+            src="/Catalog/lead 3.png" 
             alt="Web Design Package" 
             width={800} 
             height={600}

@@ -40,7 +40,7 @@ export function BrandingHero() {
 
         <motion.div animate={{ y: [0, -10, 0] }} transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }} className="relative flex items-center justify-center">
           <Image 
-            src="/Catalog/Brandingpage_1.png" 
+            src="/Catalog/lead 4.png" 
             alt="Branding & Creative Services" 
             width={800} 
             height={600}
