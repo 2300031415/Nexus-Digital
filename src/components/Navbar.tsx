@@ -76,12 +76,12 @@ const Navbar = () => {
     <>
       <nav className="sticky top-0 z-50 bg-white border-b border-[#E2E8F0] px-8 py-4">
         <div className="flex justify-between items-center">
-        <Link href="/" className="flex items-center cursor-pointer h-[55px] w-[196px]">
+        <Link href="/" className="flex items-center cursor-pointer h-[70px] w-[240px] ml-2">
           <Image
             src="/logo.png"
             alt="Nexus Digital Group Logo"
-            width={161}
-            height={55}
+            width={240}
+            height={70}
             className="w-full h-full object-contain object-left"
           />
         </Link>
