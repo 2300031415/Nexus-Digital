@@ -1,5 +1,7 @@
 "use client";
 
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import ContactDetails from "@/components/contact/ContactDetails";
 import ContactForm from "@/components/contact/ContactForm";
 import ContactHeader from "@/components/contact/ContactHeader";
@@ -8,6 +10,7 @@ import { motion } from "framer-motion";
 export default function ContactPage() {
   return (
     <main className="relative min-h-screen overflow-hidden bg-gradient-to-br from-[#dce9fb] via-[#e8f3fc] to-[#cfe5f7]">
+      <Navbar />
       <motion.div
         animate={{ scale: [1, 1.05, 1] }}
         transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
@@ -21,6 +24,7 @@ export default function ContactPage() {
           <ContactForm />
         </div>
       </div>
+      <Footer />
     </main>
   );
 }

@@ -39,7 +39,7 @@ export default function ContactDetails() {
 
       <div className="flex flex-col gap-0.5">
         <FiMapPin className="text-nexus-blue text-[1.75rem] mb-3" />
-        <p className="text-nexus-dark font-extrabold text-[1.4rem] mb-1">New York</p>
+        <p className="text-nexus-dark font-extrabold text-[1.4rem] mb-1">Melbourne</p>
         <p className="text-gray-500 text-sm leading-relaxed">
           585 Little Collins St,
           <br />
@@ -58,7 +58,7 @@ export default function ContactDetails() {
           <FiUser />
         </span>
         <p className="text-nexus-dark font-extrabold text-[1.1rem] mb-1">info@nexusdigitalgroup.com.au</p>
-        <p className="text-gray-500 text-sm">Career at Seven Creative</p>
+        <p className="text-gray-500 text-sm">General Enquiries</p>
       </div>
 
       <motion.div variants={socialContainer} initial="hidden" whileInView="show" viewport={{ once: true }} className="mt-6 flex gap-3">
