@@ -33,7 +33,7 @@ export default function ContactDetails() {
     >
       <div className="flex flex-col gap-0.5">
         <FiHeadphones className="text-nexus-blue text-[1.75rem] mb-3" />
-        <p className="text-nexus-dark font-extrabold text-[1.4rem] mb-1">+1 001 234 5678</p>
+        <p className="text-nexus-dark font-extrabold text-[1.4rem] mb-1">1300 029 126</p>
         <p className="text-gray-500 text-sm">Call us: Mon - Fri 9:00 - 19:00</p>
       </div>
 
@@ -41,15 +41,15 @@ export default function ContactDetails() {
         <FiMapPin className="text-nexus-blue text-[1.75rem] mb-3" />
         <p className="text-nexus-dark font-extrabold text-[1.4rem] mb-1">New York</p>
         <p className="text-gray-500 text-sm leading-relaxed">
-          990 Madison Ave, Midtown Manhattan,
+          585 Little Collins St,
           <br />
-          2th Floor, NY 10022
+          Melbourne VIC 3000
         </p>
       </div>
 
       <div className="flex flex-col gap-0.5">
         <FiHelpCircle className="text-nexus-blue text-[1.75rem] mb-3" />
-        <p className="text-nexus-dark font-extrabold text-[1.1rem] mb-1">info@dream-theme.com</p>
+        <p className="text-nexus-dark font-extrabold text-[1.1rem] mb-1"> info@nexusdigitalgroup.com.au</p>
         <p className="text-gray-500 text-sm">Drop us a line anytime!</p>
       </div>
 

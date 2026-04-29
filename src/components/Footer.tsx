@@ -61,9 +61,9 @@ const Footer = () => {
         <div>
           <h4 className="text-[14px] font-bold text-[#0F172A] mb-6 uppercase tracking-wider">Get In Touch</h4>
           <ul className="space-y-4">
-            <li className="text-[14px] text-[#475569]">📞 1300 123 456</li>
-            <li className="text-[14px] text-[#475569]">📧 hello@nexusdigitalgroup.com.au</li>
-            <li className="text-[14px] text-[#475569]">📍 Melbourne, Victoria, Australia</li>
+            <li className="text-[14px] text-[#475569]">📞 1300 029 126</li>
+            <li className="text-[14px] text-[#475569]">📧 info@nexusdigitalgroup.com.au</li>
+            <li className="text-[14px] text-[#475569]">📍585 Little Collins St, Melbourne VIC 3000</li>
           </ul>
         </div>
       </div>
