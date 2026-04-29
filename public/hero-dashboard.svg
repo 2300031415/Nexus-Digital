@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8fafc" rx="16" />
+  
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="180" height="600" fill="#ffffff" rx="16" />
+  <rect x="20" y="30" width="100" height="24" fill="#e2e8f0" rx="4" />
+  <rect x="20" y="80" width="120" height="16" fill="#cbd5e1" rx="4" />
+  <rect x="20" y="120" width="120" height="16" fill="#f1f5f9" rx="4" />
+  <rect x="20" y="160" width="120" height="16" fill="#f1f5f9" rx="4" />
+  <rect x="20" y="200" width="120" height="16" fill="#f1f5f9" rx="4" />
+  
+  <!-- Header -->
+  <rect x="180" y="0" width="620" height="80" fill="#ffffff" rx="16" />
+  <rect x="210" y="30" width="200" height="24" fill="#e2e8f0" rx="4" />
+  <circle cx="750" cy="40" r="16" fill="#cbd5e1" />
+  
+  <!-- Dashboard Cards -->
+  <rect x="210" y="110" width="180" height="100" fill="#ffffff" rx="12" stroke="#e2e8f0" stroke-width="2" />
+  <rect x="230" y="130" width="80" height="16" fill="#94a3b8" rx="4" />
+  <rect x="230" y="160" width="120" height="32" fill="#3b82f6" rx="4" />
+  
+  <rect x="410" y="110" width="180" height="100" fill="#ffffff" rx="12" stroke="#e2e8f0" stroke-width="2" />
+  <rect x="430" y="130" width="80" height="16" fill="#94a3b8" rx="4" />
+  <rect x="430" y="160" width="120" height="32" fill="#22c55e" rx="4" />
+  
+  <rect x="610" y="110" width="160" height="100" fill="#ffffff" rx="12" stroke="#e2e8f0" stroke-width="2" />
+  <rect x="630" y="130" width="80" height="16" fill="#94a3b8" rx="4" />
+  <rect x="630" y="160" width="100" height="32" fill="#8b5cf6" rx="4" />
+  
+  <!-- Chart Area -->
+  <rect x="210" y="240" width="380" height="330" fill="#ffffff" rx="12" stroke="#e2e8f0" stroke-width="2" />
+  <rect x="240" y="270" width="150" height="20" fill="#e2e8f0" rx="4" />
+  <path d="M 240 500 Q 300 450 350 480 T 550 300" fill="none" stroke="#3b82f6" stroke-width="6" stroke-linecap="round" />
+  <circle cx="240" cy="500" r="6" fill="#3b82f6" />
+  <circle cx="350" cy="480" r="6" fill="#3b82f6" />
+  <circle cx="550" cy="300" r="6" fill="#3b82f6" />
+  
+  <!-- Right Panel Area -->
+  <rect x="610" y="240" width="160" height="330" fill="#ffffff" rx="12" stroke="#e2e8f0" stroke-width="2" />
+  <rect x="630" y="270" width="100" height="16" fill="#cbd5e1" rx="4" />
+  <rect x="630" y="310" width="120" height="40" fill="#f1f5f9" rx="8" />
+  <rect x="630" y="360" width="120" height="40" fill="#f1f5f9" rx="8" />
+  <rect x="630" y="410" width="120" height="40" fill="#f1f5f9" rx="8" />
+</svg>
