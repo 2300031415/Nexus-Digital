@@ -57,7 +57,7 @@ export default function ContactDetails() {
         <span className="w-7 h-7 rounded-full border border-nexus-blue/30 flex items-center justify-center text-nexus-blue text-base mb-3">
           <FiUser />
         </span>
-        <p className="text-nexus-dark font-extrabold text-[1.1rem] mb-1"> info@nexusdigitalgroup.com.au</p>
+        <p className="text-nexus-dark font-extrabold text-[1.1rem] mb-1">info@nexusdigitalgroup.com.au</p>
         <p className="text-gray-500 text-sm">Career at Seven Creative</p>
       </div>
 
