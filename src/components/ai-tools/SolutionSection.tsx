@@ -16,19 +16,19 @@ const solutions = [
     icon: FiTarget,
     title: "Lead Generation System",
     desc: "Capture, qualify, and follow up leads automatically to increase conversions.",
-    href: "#"
+    href: "/solutions/lead-generation"
   },
   {
     icon: FiGlobe,
     title: "Website + Marketing Packages",
     desc: "Combine high-converting websites with performance marketing systems that drive growth.",
-    href: "#"
+    href: "/solutions/website-marketing-packages"
   },
   {
     icon: FiSettings,
     title: "CRM Automations",
     desc: "Automate pipelines, reminders, and customer workflows inside your CRM.",
-    href: "#"
+    href: "/solutions/crm-automation"
   }
 ];
 
@@ -60,11 +60,7 @@ const SolutionSection = () => {
               >
                 <Link
                   href={item.href}
-                  className={`inline-flex items-center gap-2 px-5 py-3 rounded-full border text-[14px] font-semibold transition-all ${
-                    index === 0
-                      ? "bg-nexus-blue text-white border-nexus-blue"
-                      : "bg-white text-[#0F172A] border-[#E2E8F0] hover:border-nexus-blue hover:text-nexus-blue"
-                  }`}
+                  className="inline-flex items-center gap-2 px-5 py-3 rounded-full border text-[14px] font-semibold transition-all bg-white text-[#0F172A] border-[#E2E8F0] hover:border-nexus-blue hover:text-nexus-blue hover:shadow-sm"
                 >
                   <Icon className="w-4 h-4" />
                   {item.title}
