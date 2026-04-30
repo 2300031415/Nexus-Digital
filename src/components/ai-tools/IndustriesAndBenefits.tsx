@@ -25,11 +25,11 @@ const IndustriesAndBenefits = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12">
         
         {/* LEFT COLUMN: Industries */}
-        <div>
-          <span className="text-[11px] font-semibold tracking-widest uppercase text-nexus-blue mb-6 block">
+        <div className="flex flex-col h-full">
+          <span className="text-[11px] font-semibold tracking-widest uppercase text-nexus-blue mb-6 block min-h-[40px]">
             INDUSTRIES WE SERVE
           </span>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 flex-grow justify-between">
             {industries.map((item, index) => {
               return (
                 <div key={index} className="flex items-center gap-4">
@@ -50,18 +50,18 @@ const IndustriesAndBenefits = () => {
         </div>
 
         {/* MIDDLE COLUMN: Benefits */}
-        <div>
-          <span className="text-[11px] font-semibold tracking-widest uppercase text-nexus-blue mb-6 block">
+        <div className="flex flex-col h-full">
+          <span className="text-[11px] font-semibold tracking-widest uppercase text-nexus-blue mb-6 block min-h-[40px]">
             BENEFITS OF AI BUSINESS TOOLS
           </span>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 flex-grow">
             {benefits.map((item, index) => {
               const Icon = item.icon;
               return (
                 <motion.div 
                   key={index}
                   whileHover={{ scale: 1.02 }}
-                  className="bg-white p-6 rounded-xl border border-[#E2E8F0] text-center shadow-sm flex flex-col items-center justify-center gap-3"
+                  className="bg-white p-6 rounded-xl border border-[#E2E8F0] text-center shadow-sm flex flex-col items-center justify-center gap-3 h-full"
                 >
                   <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center mb-1">
                     <Icon className="w-6 h-6 text-nexus-blue" />
@@ -74,38 +74,38 @@ const IndustriesAndBenefits = () => {
         </div>
 
         {/* RIGHT COLUMN: Popular Tools */}
-        <div>
-          <span className="text-[11px] font-semibold tracking-widest uppercase text-nexus-blue mb-6 block">
+        <div className="flex flex-col h-full">
+          <span className="text-[11px] font-semibold tracking-widest uppercase text-nexus-blue mb-6 block min-h-[40px]">
             POPULAR AI TOOLS WE WORK WITH
           </span>
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-3 gap-6 flex-grow">
             {/* 1. ChatGPT */}
-            <div className="bg-white p-3 rounded-xl border border-[#E2E8F0] flex flex-col items-center justify-center aspect-square text-center shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-white rounded-xl border border-[#E2E8F0] flex flex-col items-center justify-center h-full p-4 text-center shadow-sm hover:shadow-md transition-shadow">
               <img src="/Catalog/chatgpt.png" alt="ChatGPT" className="w-8 h-8 mb-2 object-contain" />
               <span className="text-[10px] font-bold text-[#0F172A]">ChatGPT</span>
             </div>
             {/* 2. Claude */}
-            <div className="bg-white p-3 rounded-xl border border-[#E2E8F0] flex flex-col items-center justify-center aspect-square text-center shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-white rounded-xl border border-[#E2E8F0] flex flex-col items-center justify-center h-full p-4 text-center shadow-sm hover:shadow-md transition-shadow">
               <img src="/Catalog/claude.png" alt="Claude" className="w-8 h-8 mb-2 object-contain" />
               <span className="text-[10px] font-bold text-[#0F172A]">Claude</span>
             </div>
             {/* 3. HubSpot */}
-            <div className="bg-white p-3 rounded-xl border border-[#E2E8F0] flex flex-col items-center justify-center aspect-square text-center shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-white rounded-xl border border-[#E2E8F0] flex flex-col items-center justify-center h-full p-4 text-center shadow-sm hover:shadow-md transition-shadow">
               <img src="/Catalog/Hub spot.png" alt="HubSpot" className="w-8 h-8 mb-2 object-contain" />
               <span className="text-[10px] font-bold text-[#0F172A]">HubSpot</span>
             </div>
             {/* 4. Make */}
-            <div className="bg-white p-3 rounded-xl border border-[#E2E8F0] flex flex-col items-center justify-center aspect-square text-center shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-white rounded-xl border border-[#E2E8F0] flex flex-col items-center justify-center h-full p-4 text-center shadow-sm hover:shadow-md transition-shadow">
               <img src="/Catalog/make.png" alt="Make" className="w-8 h-8 mb-2 object-contain" />
               <span className="text-[10px] font-bold text-[#0F172A]">Make</span>
             </div>
             {/* 5. Zapier */}
-            <div className="bg-white p-3 rounded-xl border border-[#E2E8F0] flex flex-col items-center justify-center aspect-square text-center shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-white rounded-xl border border-[#E2E8F0] flex flex-col items-center justify-center h-full p-4 text-center shadow-sm hover:shadow-md transition-shadow">
               <img src="/Catalog/zapier.png" alt="Zapier" className="w-8 h-8 mb-2 object-contain" />
               <span className="text-[10px] font-bold text-[#0F172A]">Zapier</span>
             </div>
             {/* 6. Airtable */}
-            <div className="bg-white p-3 rounded-xl border border-[#E2E8F0] flex flex-col items-center justify-center aspect-square text-center shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-white rounded-xl border border-[#E2E8F0] flex flex-col items-center justify-center h-full p-4 text-center shadow-sm hover:shadow-md transition-shadow">
               <img src="/Catalog/airtable.png" alt="Airtable" className="w-8 h-8 mb-2 object-contain" />
               <span className="text-[10px] font-bold text-[#0F172A]">Airtable</span>
             </div>

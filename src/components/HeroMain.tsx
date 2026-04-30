@@ -10,7 +10,7 @@ const HeroMain = () => {
     <section className="relative bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center">
         {/* Left Column */}
-        <div className="lg:w-[60%] pt-20 pb-20 px-8">
+        <div className="lg:w-[50%] pt-20 pb-20 px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -67,7 +67,7 @@ const HeroMain = () => {
         </div>
 
         {/* Right Column: Hero Image */}
-        <div className="lg:w-[40%] w-full px-8 lg:px-0 py-12 lg:py-0">
+        <div className="lg:w-[50%] w-full px-8 lg:px-0 py-12 lg:py-0">
           <motion.div
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}

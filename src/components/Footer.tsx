@@ -14,11 +14,10 @@ const Footer = () => {
             <Image 
               src="/logo.png" 
               alt="Nexus Digital Group Logo" 
-              width={32} 
-              height={32} 
+              width={240} 
+              height={70} 
               className="object-contain"
             />
-            <span className="text-sm font-bold text-[#0F172A]">NEXUS DIGITAL GROUP</span>
           </div>
           <p className="text-[14px] text-[#475569] leading-relaxed mb-6">
             <span className="font-bold text-[#0F172A] block mb-1">Proven Systems. Real Results.</span>

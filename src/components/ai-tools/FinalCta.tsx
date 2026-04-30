@@ -12,10 +12,10 @@ const FinalCta = () => {
         
         {/* LEFT COLUMN */}
         <div className="md:w-1/2">
-          <h2 className="text-[32px] font-bold text-white leading-tight">
+          <h2 className="text-[28px] font-bold text-white leading-tight">
             Ready to Use AI Tools
           </h2>
-          <h2 className="text-[32px] font-bold text-nexus-blue leading-tight mb-4">
+          <h2 className="text-[28px] font-bold text-nexus-blue leading-tight mb-4">
             That Actually Work?
           </h2>
           <p className="text-[15px] text-[#E0E7FF] leading-relaxed max-w-lg mt-4">

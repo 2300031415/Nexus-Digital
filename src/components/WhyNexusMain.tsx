@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { FiCheckCircle, FiUsers, FiBarChart2, FiSettings, FiTrendingUp } from 'react-icons/fi';
+import { FiCheckCircle, FiUsers, FiBarChart2, FiSettings, FiTrendingUp, FiRefreshCw } from 'react-icons/fi';
 import { FaHandPaper } from 'react-icons/fa';
 
 const WhyNexusMain = () => {
@@ -79,40 +79,46 @@ const WhyNexusMain = () => {
             {/* Nodes */}
             <div className="relative w-80 h-80">
               {/* Center */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-white rounded-full shadow-xl border border-nexus-blue/20 flex flex-col items-center justify-center z-10">
-                <FiTrendingUp className="w-6 h-6 text-nexus-blue mb-1" />
-                <span className="text-[12px] font-bold text-[#0F172A] text-center leading-tight">GROWTH<br/>SYSTEM</span>
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-white rounded-full shadow-xl border border-nexus-blue/20 flex flex-col items-center justify-center z-10">
+                <FiTrendingUp className="w-8 h-8 text-nexus-blue mb-2" />
+                <span className="text-[14px] font-bold text-[#0F172A] text-center leading-tight">GROWTH<br/>SYSTEM</span>
               </div>
 
               {/* Orbital Nodes (Static relative to center for readability, but connected to dashed ring) */}
               {/* Attract - Top Right */}
-              <div className="absolute top-4 right-4 w-20 h-20 bg-white rounded-full shadow-lg border border-[#E2E8F0] flex flex-col items-center justify-center">
-                <FiUsers className="w-5 h-5 text-nexus-blue mb-1" />
-                <span className="text-[10px] font-bold text-[#475569]">ATTRACT</span>
+              <div className="absolute top-2 right-2 w-24 h-24 bg-white rounded-full shadow-lg border border-[#E2E8F0] flex flex-col items-center justify-center">
+                <FiUsers className="w-6 h-6 text-nexus-blue mb-1" />
+                <span className="text-[11px] font-bold text-[#475569]">ATTRACT</span>
               </div>
 
               {/* Convert - Right */}
-              <div className="absolute top-1/2 -right-10 -translate-y-1/2 w-20 h-20 bg-white rounded-full shadow-lg border border-[#E2E8F0] flex flex-col items-center justify-center">
-                <FiBarChart2 className="w-5 h-5 text-nexus-blue mb-1" />
-                <span className="text-[10px] font-bold text-[#475569]">CONVERT</span>
+              <div className="absolute top-1/2 -right-12 -translate-y-1/2 w-24 h-24 bg-white rounded-full shadow-lg border border-[#E2E8F0] flex flex-col items-center justify-center">
+                <FiBarChart2 className="w-6 h-6 text-nexus-blue mb-1" />
+                <span className="text-[11px] font-bold text-[#475569]">CONVERT</span>
               </div>
 
               {/* Automate - Bottom Right */}
-              <div className="absolute bottom-4 right-4 w-20 h-20 bg-white rounded-full shadow-lg border border-[#E2E8F0] flex flex-col items-center justify-center">
-                <FiSettings className="w-5 h-5 text-nexus-blue mb-1" />
-                <span className="text-[10px] font-bold text-[#475569]">AUTOMATE</span>
+              <div className="absolute bottom-2 right-2 w-24 h-24 bg-white rounded-full shadow-lg border border-[#E2E8F0] flex flex-col items-center justify-center">
+                <FiSettings className="w-6 h-6 text-nexus-blue mb-1" />
+                <span className="text-[11px] font-bold text-[#475569]">AUTOMATE</span>
               </div>
 
               {/* Nurture - Bottom Left */}
-              <div className="absolute bottom-4 left-4 w-20 h-20 bg-white rounded-full shadow-lg border border-[#E2E8F0] flex flex-col items-center justify-center">
-                <FaHandPaper className="w-5 h-5 text-nexus-blue mb-1" />
-                <span className="text-[10px] font-bold text-[#475569]">NURTURE</span>
+              <div className="absolute bottom-2 left-2 w-24 h-24 bg-white rounded-full shadow-lg border border-[#E2E8F0] flex flex-col items-center justify-center">
+                <FaHandPaper className="w-6 h-6 text-nexus-blue mb-1" />
+                <span className="text-[11px] font-bold text-[#475569]">NURTURE</span>
               </div>
 
               {/* Scale - Left */}
-              <div className="absolute top-1/2 -left-10 -translate-y-1/2 w-20 h-20 bg-white rounded-full shadow-lg border border-[#E2E8F0] flex flex-col items-center justify-center">
-                <FiTrendingUp className="w-5 h-5 text-nexus-blue mb-1" />
-                <span className="text-[10px] font-bold text-[#475569]">SCALE</span>
+              <div className="absolute top-1/2 -left-12 -translate-y-1/2 w-24 h-24 bg-white rounded-full shadow-lg border border-[#E2E8F0] flex flex-col items-center justify-center">
+                <FiTrendingUp className="w-6 h-6 text-nexus-blue mb-1" />
+                <span className="text-[11px] font-bold text-[#475569]">SCALE</span>
+              </div>
+
+              {/* Retain - Top Left */}
+              <div className="absolute top-2 left-2 w-24 h-24 bg-white rounded-full shadow-lg border border-[#E2E8F0] flex flex-col items-center justify-center">
+                <FiRefreshCw className="w-6 h-6 text-nexus-blue mb-1" />
+                <span className="text-[11px] font-bold text-[#475569]">RETAIN</span>
               </div>
             </div>
           </div>

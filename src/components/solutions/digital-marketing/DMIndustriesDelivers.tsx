@@ -17,7 +17,6 @@ const delivers = [
   [FiEye, "Clear Visibility & Tracking"],
   [FiTrendingUp, "Faster Growth"],
   [FiMail, "Automated Lead Nurturing"],
-  [FiMaximize, "Scalable Campaigns"],
 ] as const;
 
 export default function DMIndustriesDelivers() {

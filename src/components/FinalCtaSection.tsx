@@ -28,8 +28,8 @@ const FinalCtaSection = () => {
         <div className="flex flex-col items-center lg:items-start w-full">
           <div className="flex flex-wrap gap-6 mb-8 w-full justify-center lg:justify-start">
             {['Free Strategy Call', 'No Obligation', 'Tailored For You'].map((badge) => (
-              <div key={badge} className="flex items-center gap-2 text-[14px] text-[#0F172A] font-medium">
-                <FiCheck className="w-4 h-4 text-nexus-green" />
+              <div key={badge} className="flex items-center gap-2 text-[16px] text-[#0F172A] font-medium">
+                <FiCheck className="w-5 h-5 text-nexus-green" />
                 {badge}
               </div>
             ))}

@@ -7,7 +7,7 @@ export default function FinalCta() {
     <section className="bg-nexus-dark py-20 px-8 text-white">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div>
-          <h2 className="text-[32px] font-bold mb-4">Ready to Build Your AI Workforce?</h2>
+          <h2 className="text-[28px] font-bold mb-4">Ready to Build Your AI Workforce?</h2>
           <p className="text-[15px] text-[#E0E7FF]">Stop losing leads. Stop relying on manual processes. Start scaling with AI.</p>
         </div>
         <div>

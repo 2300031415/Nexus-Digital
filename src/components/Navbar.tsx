@@ -76,23 +76,23 @@ const Navbar = () => {
     <>
       <nav className="sticky top-0 z-50 bg-white border-b border-[#E2E8F0] px-8 py-4">
         <div className="flex justify-between items-center">
-        <Link href="/" className="flex items-center cursor-pointer h-[70px] w-[240px] ml-2">
+        <Link href="/" className="flex items-center cursor-pointer h-[90px] w-[300px] ml-2">
           <Image
             src="/logo.png"
             alt="Nexus Digital Group Logo"
-            width={240}
-            height={70}
+            width={300}
+            height={90}
             className="w-full h-full object-contain object-left"
           />
         </Link>
 
         <div className="hidden md:flex items-center gap-8">
-          <Link href="/" className={`text-[14px] font-semibold transition-colors ${pathname === "/" ? "text-nexus-blue" : "text-[#1E3A5F] hover:text-nexus-blue"}`}>
+          <Link href="/" className={`text-[16px] font-semibold transition-colors ${pathname === "/" ? "text-nexus-blue" : "text-[#1E3A5F] hover:text-nexus-blue"}`}>
             Home
           </Link>
           <Link
             href="/ai-business-tools"
-            className={`text-[14px] font-semibold transition-colors ${
+            className={`text-[16px] font-semibold transition-colors ${
               pathname === "/ai-business-tools" ? "text-nexus-blue" : "text-[#1E3A5F] hover:text-nexus-blue"
             }`}
           >
@@ -110,7 +110,7 @@ const Navbar = () => {
                 setIsSolutionsOpen((prev) => !prev);
                 setIsServicesOpen(false);
               }}
-              className={`text-[14px] font-semibold transition-colors flex items-center gap-1 ${
+              className={`text-[16px] font-semibold transition-colors flex items-center gap-1 ${
                 isSolutionsActive ? "text-nexus-blue" : "text-[#1E3A5F] hover:text-nexus-blue"
               }`}
             >
@@ -155,7 +155,7 @@ const Navbar = () => {
                 setIsServicesOpen((prev) => !prev);
                 setIsSolutionsOpen(false);
               }}
-              className={`text-[14px] font-semibold transition-colors flex items-center ${
+              className={`text-[16px] font-semibold transition-colors flex items-center ${
                 isServicesActive || isServicesOpen ? "text-nexus-blue" : "text-[#1E3A5F] hover:text-nexus-blue"
               }`}
             >
@@ -187,10 +187,10 @@ const Navbar = () => {
             </AnimatePresence>
           </div>
 
-          <Link href="/about" className="text-[14px] font-semibold text-[#1E3A5F] hover:text-nexus-blue transition-colors">
+          <Link href="/about" className="text-[16px] font-semibold text-[#1E3A5F] hover:text-nexus-blue transition-colors">
             About
           </Link>
-          <Link href="/contact" className="text-[14px] font-semibold text-[#1E3A5F] hover:text-nexus-blue transition-colors">
+          <Link href="/contact" className="text-[16px] font-semibold text-[#1E3A5F] hover:text-nexus-blue transition-colors">
             Contact
           </Link>
         </div>
@@ -199,7 +199,7 @@ const Navbar = () => {
             onClick={() => setIsConsultationModalOpen(true)}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
-            className="bg-nexus-blue hover:bg-blue-700 text-white px-8 py-3 rounded-full text-[14px] font-bold transition-all shadow-md"
+            className="bg-nexus-blue hover:bg-blue-700 text-white px-8 py-3 rounded-full text-[16px] font-bold transition-all shadow-md"
           >
             Book a consultation
           </motion.button>
