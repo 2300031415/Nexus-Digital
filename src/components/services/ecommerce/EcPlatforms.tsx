@@ -23,12 +23,14 @@ export default function EcPlatforms() {
   return (
     <motion.section initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-50px" }} transition={{ duration: 0.6, ease: "easeOut" }} className="bg-[#F8FAFC] py-20">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16">
-        <div>
-          <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#3B82F6]">PLATFORMS WE WORK WITH</p>
-          <p className="text-[14px] text-[#4B5563] leading-relaxed mt-3">We work with leading eCommerce platforms or build custom solutions to fit your business needs.</p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-8">
+        <div className="flex flex-col h-full">
+          <div className="min-h-[100px]">
+            <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#3B82F6]">PLATFORMS WE WORK WITH</p>
+            <p className="text-[14px] text-[#4B5563] leading-relaxed mt-3">We work with leading eCommerce platforms or build custom solutions to fit your business needs.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-4 flex-grow">
             {/* Shopify */}
-            <div className="bg-white rounded-2xl p-6 border border-[#E5E7EB] shadow-sm flex flex-col items-center text-center">
+            <div className="bg-white rounded-2xl p-6 border border-[#E5E7EB] shadow-sm flex flex-col items-center text-center h-full">
               <div className="w-16 h-16 relative mb-4">
                 <Image src="/Catalog/shopify.png" alt="Shopify" fill className="object-contain" />
               </div>
@@ -37,7 +39,7 @@ export default function EcPlatforms() {
             </div>
 
             {/* WooCommerce */}
-            <div className="bg-white rounded-2xl p-6 border border-[#E5E7EB] shadow-sm flex flex-col items-center text-center">
+            <div className="bg-white rounded-2xl p-6 border border-[#E5E7EB] shadow-sm flex flex-col items-center text-center h-full">
               <div className="w-16 h-16 relative mb-4">
                 <Image src="/Catalog/woo.png" alt="WooCommerce" fill className="object-contain" />
               </div>
@@ -46,7 +48,7 @@ export default function EcPlatforms() {
             </div>
 
             {/* Custom */}
-            <div className="bg-white rounded-2xl p-6 border border-[#E5E7EB] shadow-sm flex flex-col items-center text-center">
+            <div className="bg-white rounded-2xl p-6 border border-[#E5E7EB] shadow-sm flex flex-col items-center text-center h-full">
               <div className="w-16 h-16 flex items-center justify-center mb-4 bg-blue-50 rounded-xl">
                 <FiCode size={32} className="text-[#3B82F6]" />
               </div>
@@ -55,11 +57,13 @@ export default function EcPlatforms() {
             </div>
           </div>
         </div>
-        <div>
-          <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#3B82F6]">ECOMMERCE SOLUTIONS ACROSS INDUSTRIES</p>
-          <div className="grid grid-cols-3 gap-4 mt-8">
+        <div className="flex flex-col h-full">
+          <div className="min-h-[100px]">
+            <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#3B82F6]">ECOMMERCE SOLUTIONS ACROSS INDUSTRIES</p>
+          </div>
+          <div className="grid grid-cols-3 gap-5 mt-4 flex-grow">
             {industries.map((item) => (
-              <div key={item.label} className="bg-white rounded-xl p-4 flex flex-col items-center text-center border border-[#E5E7EB]">
+              <div key={item.label} className="bg-white rounded-xl p-4 flex flex-col items-center text-center border border-[#E5E7EB] h-full justify-center">
                 <div className="w-11 h-11 bg-[#EFF6FF] rounded-xl flex items-center justify-center mx-auto"><item.icon className="w-[22px] h-[22px] text-[#3B82F6]" /></div>
                 <p className="text-[12px] font-semibold text-[#0F172A] mt-2 leading-tight">{item.label}</p>
               </div>
