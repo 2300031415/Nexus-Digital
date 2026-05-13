@@ -38,11 +38,11 @@ export default function AIIndustriesDelivers() {
         </div>
         <div>
           <p className="text-nexus-blue text-xs font-semibold uppercase tracking-[0.2em] mb-4">WHAT AI & AUTOMATION DELIVERS</p>
-          <div className="grid grid-cols-3 gap-3">
+          <div className="grid grid-cols-3 xl:grid-cols-6 gap-3">
             {delivers.map(([Icon, label]) => (
-              <div key={label} className="flex flex-col items-center text-center">
-                <div className="w-10 h-10 bg-white border border-gray-100 rounded-full flex items-center justify-center text-nexus-blue text-lg shadow-sm mb-2"><Icon /></div>
-                <p className="text-nexus-dark font-semibold text-xs leading-snug">{label}</p>
+              <div key={label} className="flex flex-col items-center text-center justify-start">
+                <div className="w-10 h-10 bg-white border border-gray-100 rounded-full flex items-center justify-center text-nexus-blue text-lg shadow-sm mb-2 shrink-0"><Icon /></div>
+                <p className="text-nexus-dark font-semibold text-[10px] leading-tight">{label}</p>
               </div>
             ))}
           </div>

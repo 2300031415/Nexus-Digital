@@ -36,11 +36,11 @@ export default function AISolution() {
         </div>
         <div>
           <p className="text-nexus-blue text-xs font-semibold uppercase tracking-[0.2em] mb-4">AUTOMATION ACROSS YOUR ENTIRE BUSINESS</p>
-          <motion.div initial="hidden" whileInView="show" viewport={{ once: true }} variants={{ hidden: {}, show: { transition: { staggerChildren: 0.08 } } }} className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+          <motion.div initial="hidden" whileInView="show" viewport={{ once: true }} variants={{ hidden: {}, show: { transition: { staggerChildren: 0.08 } } }} className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-6 gap-3">
             {areas.map((area) => (
-              <motion.div key={area.title} variants={{ hidden: { opacity: 0, y: 12 }, show: { opacity: 1, y: 0 } }} className="bg-white border border-gray-100 rounded-2xl p-5 text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
-                <div className="w-12 h-12 mx-auto mb-3 bg-blue-50 rounded-full flex items-center justify-center text-nexus-blue text-xl"><area.icon /></div>
-                <p className="text-nexus-dark font-bold text-xs leading-snug mb-1">{area.title}</p>
+              <motion.div key={area.title} variants={{ hidden: { opacity: 0, y: 12 }, show: { opacity: 1, y: 0 } }} className="bg-white border border-gray-100 rounded-2xl p-4 text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex flex-col items-center justify-start">
+                <div className="w-10 h-10 mx-auto mb-3 bg-blue-50 rounded-full flex items-center justify-center text-nexus-blue text-lg shrink-0"><area.icon /></div>
+                <p className="text-nexus-dark font-bold text-[11px] leading-tight">{area.title}</p>
               </motion.div>
             ))}
           </motion.div>
