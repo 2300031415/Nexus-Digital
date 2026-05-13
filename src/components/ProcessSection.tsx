@@ -40,7 +40,7 @@ const ProcessSection = () => {
           Our 3-Step Process
         </motion.h2>
 
-        <div className="flex flex-col lg:flex-row justify-around items-start gap-12 lg:gap-0 relative">
+        <div className="flex flex-col lg:flex-row justify-around items-center gap-12 lg:gap-0 relative">
           {steps.map((step, index) => (
             <React.Fragment key={index}>
               <motion.div
@@ -48,21 +48,31 @@ const ProcessSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
                 viewport={{ once: true }}
-                className="flex flex-col items-center max-w-[280px] mx-auto z-10"
+                className="bg-white border border-[#E2E8F0] rounded-2xl p-6 shadow-sm flex items-center gap-4 max-w-[340px] w-full mx-auto z-10 text-left relative"
               >
-                <div className="w-[50px] h-[50px] bg-nexus-blue rounded-full flex items-center justify-center text-white text-[24px] font-bold mb-6 shadow-lg">
+                {/* Number Circle */}
+                <div className="w-10 h-10 bg-nexus-blue rounded-full flex items-center justify-center text-white text-[16px] font-bold flex-shrink-0 shadow-md">
                   {step.num}
                 </div>
-                <step.icon className="w-8 h-8 text-nexus-blue mb-4" />
-                <h3 className="text-[16px] font-bold text-[#0F172A] mb-2">{step.title}</h3>
-                <p className="text-[14px] text-[#475569] leading-relaxed">
-                  {step.description}
-                </p>
+                
+                {/* Vertical Divider */}
+                <div className="w-px h-16 bg-[#E2E8F0] flex-shrink-0 hidden sm:block" />
+                
+                {/* Content */}
+                <div className="flex flex-col">
+                  <div className="flex items-center gap-2 mb-1">
+                    <step.icon className="w-4 h-4 text-nexus-blue flex-shrink-0" />
+                    <h3 className="text-[14px] font-bold text-[#0F172A] leading-tight">{step.title}</h3>
+                  </div>
+                  <p className="text-[12px] text-[#475569] leading-relaxed">
+                    {step.description}
+                  </p>
+                </div>
               </motion.div>
               {/* Connector Arrow */}
               {index < 2 && (
-                <div className="hidden lg:flex absolute top-[25px] left-[calc(33%*index+22%)] w-[15%] h-px border-t-2 border-dashed border-[#CBD5E1] items-center justify-end">
-                   <div className="w-2 h-2 border-t-2 border-r-2 border-[#CBD5E1] rotate-45 -mr-1" />
+                <div className="hidden lg:flex absolute top-1/2 left-[calc(33.33%*index+28%)] w-[10%] h-px border-t-2 border-dashed border-nexus-blue/30 items-center justify-end z-0 -translate-y-1/2">
+                   <div className="w-2 h-2 border-t-2 border-r-2 border-nexus-blue/30 rotate-45 -mr-1" />
                 </div>
               )}
             </React.Fragment>

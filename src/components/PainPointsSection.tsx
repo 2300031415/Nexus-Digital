@@ -52,7 +52,7 @@ const PainPointsSection = () => {
               transition={{ duration: 0.4, delay: index * 0.1 }}
               viewport={{ once: true }}
               whileHover={{ scale: 1.02 }}
-              className="bg-white p-6 rounded-2xl border border-[#E2E8F0] shadow-sm flex flex-col items-center text-center group transition-all hover:shadow-md"
+              className="bg-white p-6 rounded-2xl border border-[#E2E8F0] shadow-sm flex flex-col items-start text-left group transition-all hover:shadow-md"
             >
               <div className="w-12 h-12 bg-[#FEF2F2] rounded-full flex items-center justify-center mb-6">
                 <FiX className="w-8 h-8 text-nexus-red" />

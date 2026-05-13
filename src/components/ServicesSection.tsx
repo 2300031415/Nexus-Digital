@@ -46,7 +46,7 @@ const ServicesSection = () => {
 
   return (
     <section className="bg-white py-20">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-14">
           <h2 className="text-nexus-dark text-[2rem] font-extrabold mb-2">Our Core Services</h2>
           <p className="text-gray-500 text-[15px]">
@@ -59,20 +59,20 @@ const ServicesSection = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="max-w-6xl mx-auto flex flex-col md:grid md:grid-cols-2 lg:flex lg:flex-row items-stretch gap-0 lg:divide-x lg:divide-gray-100"
+          className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6"
         >
           {services.map((service, index) => (
             <motion.div
               key={index}
               variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}
               transition={{ duration: 0.4 }}
-              className="w-full flex flex-col items-start px-6 py-8 border-b border-gray-100 last:border-b-0 md:px-8 md:py-8 md:border-b md:border-r md:border-gray-100 md:[&:nth-child(2n)]:border-r-0 lg:border-0 lg:px-8 lg:py-4 lg:flex-1"
+              className="w-full flex flex-col items-start p-6 bg-white border border-[#E2E8F0] rounded-2xl shadow-sm hover:shadow-md transition-shadow"
             >
               <Link
                 href={service.href}
                 className="w-full h-full flex flex-col"
               >
-                <div className="w-14 h-14 rounded-2xl bg-nexus-blue flex items-center justify-center mb-5 text-white text-2xl">
+                <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6 text-nexus-blue text-2xl">
                   <service.icon />
                 </div>
                 <h3 className="text-nexus-dark font-extrabold text-[1rem] leading-snug mb-2">{service.title}</h3>

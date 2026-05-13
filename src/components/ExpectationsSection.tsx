@@ -53,19 +53,21 @@ const ExpectationsSection = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="flex flex-col items-center text-center gap-4"
+              className="flex items-center text-left gap-5 bg-white border border-[#E2E8F0] p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
             >
-              <div className={`w-16 h-16 rounded-full flex items-center justify-center ${
+              <div className={`w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0 ${
                 item.color === 'green' ? 'bg-[#DCFCE7]' : 'bg-[#DBEAFE]'
               }`}>
                 <item.icon className={`w-8 h-8 ${
                   item.color === 'green' ? 'text-nexus-green' : 'text-nexus-blue'
                 }`} />
               </div>
-              <h3 className="text-[18px] font-bold text-[#0F172A]">{item.title}</h3>
-              <p className="text-[14px] text-[#475569] leading-relaxed max-w-[200px]">
-                {item.description}
-              </p>
+              <div className="flex flex-col">
+                <h3 className="text-[16px] font-bold text-[#0F172A] mb-1">{item.title}</h3>
+                <p className="text-[13px] text-[#475569] leading-relaxed">
+                  {item.description}
+                </p>
+              </div>
             </motion.div>
           ))}
         </div>
