@@ -20,13 +20,13 @@ export default function DTChallenge() {
             <h2 className="text-nexus-dark text-2xl font-extrabold leading-snug mb-3">Most Businesses Are Operating on Outdated Systems</h2>
             <p className="text-gray-500 text-sm">You might have tools... but they don&apos;t work together.</p>
           </div>
-          <motion.div initial="hidden" whileInView="show" viewport={{ once: true }} variants={{ hidden: {}, show: { transition: { staggerChildren: 0.08 } } }} className="flex flex-wrap gap-4 flex-1 justify-end">
-            {cards.map((card) => (
-              <motion.div key={card.label} variants={{ hidden: { opacity: 0, y: 12 }, show: { opacity: 1, y: 0 } }} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 flex flex-col items-center text-center w-36">
-                <div className="w-11 h-11 bg-blue-50 rounded-full flex items-center justify-center text-nexus-blue text-xl mb-3">
+          <motion.div initial="hidden" whileInView="show" viewport={{ once: true }} variants={{ hidden: {}, show: { transition: { staggerChildren: 0.08 } } }} className="grid grid-cols-2 lg:grid-cols-4 gap-0 bg-white border border-gray-100 rounded-2xl flex-1 justify-end shadow-sm overflow-hidden mt-6 lg:mt-0">
+            {cards.map((card, idx) => (
+              <motion.div key={card.label} variants={{ hidden: { opacity: 0, y: 12 }, show: { opacity: 1, y: 0 } }} className={`p-5 flex flex-col items-center text-center ${idx !== cards.length - 1 ? 'border-b lg:border-b-0 lg:border-r border-gray-100' : ''}`}>
+                <div className="w-10 h-10 flex items-center justify-center text-nexus-blue text-2xl mb-3 shrink-0">
                   <card.icon />
                 </div>
-                <p className="text-nexus-dark font-semibold text-xs leading-snug">{card.label}</p>
+                <p className="text-nexus-dark font-bold text-[11px] leading-tight max-w-[120px]">{card.label}</p>
               </motion.div>
             ))}
           </motion.div>

@@ -27,13 +27,13 @@ export default function DTWhatIs() {
           </p>
         </div>
         <div>
-          <motion.div initial="hidden" whileInView="show" viewport={{ once: true }} variants={{ hidden: {}, show: { transition: { staggerChildren: 0.08 } } }} className="flex flex-wrap gap-3 justify-start">
-            {cards.map((card) => (
-              <motion.div key={card.label} variants={{ hidden: { opacity: 0, y: 12 }, show: { opacity: 1, y: 0 } }} className="flex flex-col items-center text-center w-28">
-                <div className="w-14 h-14 bg-nexus-light-bg border border-gray-100 rounded-2xl flex items-center justify-center text-nexus-blue text-2xl mb-2 shadow-sm">
+          <motion.div initial="hidden" whileInView="show" viewport={{ once: true }} variants={{ hidden: {}, show: { transition: { staggerChildren: 0.08 } } }} className="grid grid-cols-3 lg:grid-cols-5 gap-0 bg-white border border-gray-100 rounded-2xl shadow-sm overflow-hidden mt-6 lg:mt-0">
+            {cards.map((card, idx) => (
+              <motion.div key={card.label} variants={{ hidden: { opacity: 0, y: 12 }, show: { opacity: 1, y: 0 } }} className={`p-4 flex flex-col items-center text-center ${idx !== cards.length - 1 ? 'border-b lg:border-b-0 lg:border-r border-gray-100' : ''}`}>
+                <div className="w-10 h-10 flex items-center justify-center text-nexus-blue text-2xl mb-2 shrink-0">
                   <card.icon />
                 </div>
-                <p className="text-nexus-dark font-semibold text-xs leading-snug">{card.label}</p>
+                <p className="text-nexus-dark font-bold text-[10px] leading-tight">{card.label}</p>
               </motion.div>
             ))}
           </motion.div>

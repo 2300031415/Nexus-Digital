@@ -20,9 +20,11 @@ export default function DTCTA() {
             Book Your Free Strategy Session <FiArrowRight />
           </motion.button>
           <div className="flex items-center gap-3 mt-1">
-            <div className="flex">
-              {["from-blue-400 to-blue-600", "from-green-400 to-green-600", "from-yellow-400 to-yellow-500", "from-purple-400 to-purple-600"].map((gradient, index) => (
-                <div key={gradient} className={`w-8 h-8 rounded-full border-2 border-nexus-navy bg-gradient-to-br ${gradient} ${index === 0 ? "" : "-ml-2"}`} />
+            <div className="flex -space-x-3">
+              {[33, 47, 12, 5].map((imgId) => (
+                <div key={imgId} className="w-9 h-9 rounded-full bg-gray-300 border-2 border-nexus-navy overflow-hidden shrink-0">
+                  <img src={`https://i.pravatar.cc/100?img=${imgId}`} alt="Client" className="w-full h-full object-cover" />
+                </div>
               ))}
             </div>
             <p className="text-gray-400 text-xs">Join 100+ Australian businesses growing with AI.</p>
