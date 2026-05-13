@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { FiBriefcase, FiCalendar, FiMail, FiPhone, FiShield, FiTrendingUp, FiUsers } from "react-icons/fi";
+import { FiBriefcase, FiCalendar, FiMail, FiPhone, FiShield, FiTrendingUp, FiUsers, FiCpu } from "react-icons/fi";
 
 export default function HeroSection() {
   return (

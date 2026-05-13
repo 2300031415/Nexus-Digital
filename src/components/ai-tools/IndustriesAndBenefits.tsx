@@ -17,6 +17,8 @@ const benefits = [
   { icon: FiTrendingDown, title: "Reduced Costs" },
   { icon: FiTarget, title: "Improved Performance" },
   { icon: FiRepeat, title: "Automation of Repetitive Tasks" },
+  { icon: FiFastForward, title: "Faster Decision-Making" },
+  { icon: FiTrendingUp, title: "Scalable Operations" },
 ];
 
 const IndustriesAndBenefits = () => {
@@ -78,36 +80,36 @@ const IndustriesAndBenefits = () => {
           <span className="text-[11px] font-semibold tracking-widest uppercase text-nexus-blue mb-6 block min-h-[40px]">
             POPULAR AI TOOLS WE WORK WITH
           </span>
-          <div className="grid grid-cols-3 gap-6 flex-grow">
+          <div className="grid grid-cols-2 gap-6 flex-grow">
             {/* 1. ChatGPT */}
-            <div className="bg-white rounded-xl border border-[#E2E8F0] flex flex-col items-center justify-center h-full p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-              <img src="/Catalog/chatgpt.png" alt="ChatGPT" className="w-8 h-8 mb-2 object-contain" />
-              <span className="text-[10px] font-bold text-[#0F172A]">ChatGPT</span>
+            <div className="bg-white rounded-xl border border-[#E2E8F0] flex flex-row items-center justify-center gap-2 h-full p-4 shadow-sm hover:shadow-md transition-shadow">
+              <img src="/Catalog/chatgpt.png" alt="ChatGPT" className="w-6 h-6 object-contain" />
+              <span className="text-[14px] font-bold text-[#0F172A]">ChatGPT</span>
             </div>
             {/* 2. Claude */}
-            <div className="bg-white rounded-xl border border-[#E2E8F0] flex flex-col items-center justify-center h-full p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-              <img src="/Catalog/claude.png" alt="Claude" className="w-8 h-8 mb-2 object-contain" />
-              <span className="text-[10px] font-bold text-[#0F172A]">Claude</span>
+            <div className="bg-white rounded-xl border border-[#E2E8F0] flex flex-row items-center justify-center gap-2 h-full p-4 shadow-sm hover:shadow-md transition-shadow">
+              <img src="/Catalog/claude.png" alt="Claude" className="w-6 h-6 object-contain" />
+              <span className="text-[14px] font-bold text-[#0F172A]">Claude</span>
             </div>
             {/* 3. HubSpot */}
-            <div className="bg-white rounded-xl border border-[#E2E8F0] flex flex-col items-center justify-center h-full p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-              <img src="/Catalog/Hub spot.png" alt="HubSpot" className="w-8 h-8 mb-2 object-contain" />
-              <span className="text-[10px] font-bold text-[#0F172A]">HubSpot</span>
+            <div className="bg-white rounded-xl border border-[#E2E8F0] flex flex-row items-center justify-center gap-2 h-full p-4 shadow-sm hover:shadow-md transition-shadow">
+              <img src="/Catalog/Hub spot.png" alt="HubSpot" className="w-6 h-6 object-contain" />
+              <span className="text-[14px] font-bold text-[#0F172A]">HubSpot</span>
             </div>
             {/* 4. Make */}
-            <div className="bg-white rounded-xl border border-[#E2E8F0] flex flex-col items-center justify-center h-full p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-              <img src="/Catalog/make.png" alt="Make" className="w-8 h-8 mb-2 object-contain" />
-              <span className="text-[10px] font-bold text-[#0F172A]">Make</span>
+            <div className="bg-white rounded-xl border border-[#E2E8F0] flex flex-row items-center justify-center gap-2 h-full p-4 shadow-sm hover:shadow-md transition-shadow">
+              <img src="/Catalog/make.png" alt="Make" className="w-6 h-6 object-contain" />
+              <span className="text-[14px] font-bold text-[#0F172A]">Make</span>
             </div>
             {/* 5. Zapier */}
-            <div className="bg-white rounded-xl border border-[#E2E8F0] flex flex-col items-center justify-center h-full p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-              <img src="/Catalog/zapier.png" alt="Zapier" className="w-8 h-8 mb-2 object-contain" />
-              <span className="text-[10px] font-bold text-[#0F172A]">Zapier</span>
+            <div className="bg-white rounded-xl border border-[#E2E8F0] flex flex-row items-center justify-center gap-2 h-full p-4 shadow-sm hover:shadow-md transition-shadow">
+              <img src="/Catalog/zapier.png" alt="Zapier" className="w-6 h-6 object-contain" />
+              <span className="text-[14px] font-bold text-[#0F172A]">Zapier</span>
             </div>
             {/* 6. Airtable */}
-            <div className="bg-white rounded-xl border border-[#E2E8F0] flex flex-col items-center justify-center h-full p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-              <img src="/Catalog/airtable.png" alt="Airtable" className="w-8 h-8 mb-2 object-contain" />
-              <span className="text-[10px] font-bold text-[#0F172A]">Airtable</span>
+            <div className="bg-white rounded-xl border border-[#E2E8F0] flex flex-row items-center justify-center gap-2 h-full p-4 shadow-sm hover:shadow-md transition-shadow">
+              <img src="/Catalog/airtable.png" alt="Airtable" className="w-6 h-6 object-contain" />
+              <span className="text-[14px] font-bold text-[#0F172A]">Airtable</span>
             </div>
           </div>
         </div>

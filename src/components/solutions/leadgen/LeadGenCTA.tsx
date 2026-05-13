@@ -25,9 +25,11 @@ export default function LeadGenCTA() {
             Book Your Free Strategy Call <FiArrowRight />
           </motion.button>
           <div className="mt-5 flex items-center gap-3">
-            <div className="flex -space-x-2">
-              {[1, 2, 3].map((n) => (
-                <div key={n} className="w-8 h-8 rounded-full bg-white/80 border-2 border-nexus-navy" />
+            <div className="flex -space-x-3">
+              {[33, 47, 12, 5].map((imgId) => (
+                <div key={imgId} className="w-9 h-9 rounded-full bg-gray-300 border-2 border-nexus-navy overflow-hidden">
+                  <img src={`https://i.pravatar.cc/100?img=${imgId}`} alt="Client" className="w-full h-full object-cover" />
+                </div>
               ))}
             </div>
             <p className="text-sm text-gray-400">Join 100+ Australian businesses growing with Nexus.</p>

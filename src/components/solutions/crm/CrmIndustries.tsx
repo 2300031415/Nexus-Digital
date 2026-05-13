@@ -26,12 +26,11 @@ export function CrmIndustries() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10">
         <div>
           <p className="text-xs font-semibold tracking-widest uppercase text-nexus-blue mb-4">CRM SOLUTIONS ACROSS INDUSTRIES</p>
-          <div className="space-y-3">
+          <div className="flex items-start justify-between gap-2 mt-6">
             {CRM_INDUSTRIES.map(([Icon, label]) => (
-              <div key={String(label)} className="inline-flex items-center gap-3 mr-3 mb-2 bg-nexus-light-bg border border-gray-100 rounded-xl px-4 py-2">
-
-                <Icon className="text-nexus-blue" />
-                <span className="text-sm font-medium text-nexus-navy">{label}</span>
+              <div key={String(label)} className="flex-1 text-center flex flex-col items-center">
+                <Icon className="text-nexus-blue w-7 h-7 mb-2" />
+                <span className="text-[10px] font-bold text-nexus-navy leading-tight">{label}</span>
               </div>
             ))}
           </div>
@@ -40,12 +39,11 @@ export function CrmIndustries() {
 
         <div>
           <p className="text-xs font-semibold tracking-widest uppercase text-nexus-blue mb-4">BENEFITS OF CRM AUTOMATION</p>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+          <div className="grid grid-cols-3 lg:grid-cols-6 gap-2 mt-6">
             {CRM_BENEFITS.map(([Icon, label]) => (
-              <div key={String(label)} className="bg-nexus-light-bg rounded-xl border border-gray-100 p-4 text-center">
-
-                <Icon className="w-6 h-6 text-nexus-blue mx-auto mb-2" />
-                <p className="text-xs font-semibold text-nexus-navy">{label}</p>
+              <div key={String(label)} className="bg-transparent p-0 text-center flex flex-col items-center">
+                <Icon className="w-8 h-8 text-nexus-blue mx-auto mb-2" />
+                <p className="text-[10px] font-bold text-nexus-navy leading-tight">{label}</p>
               </div>
             ))}
           </div>

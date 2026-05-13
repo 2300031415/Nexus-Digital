@@ -15,11 +15,12 @@ export default function ProblemsSection() {
         <span className="text-[11px] font-semibold tracking-widest uppercase text-nexus-blue block mb-3">THE REAL PROBLEM</span>
         <h2 className="text-[32px] font-bold mb-3">You Don&apos;t Have a Staff Problem — You Have a Systems Problem</h2>
         <p className="text-[15px] text-[#475569] mb-12">Most businesses lose revenue every single day because:</p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
           {problems.map(([Icon, title], idx) => (
-            <div key={title} className="bg-white p-6 rounded-lg border border-[#E2E8F0] hover:shadow-lg">
+            <div key={title} className="bg-white p-6 rounded-lg border border-[#E2E8F0] hover:shadow-lg relative overflow-hidden flex flex-col items-center justify-center min-h-[160px]">
               <Icon className={`w-10 h-10 mx-auto mb-3 ${idx === 4 ? "text-nexus-red" : "text-nexus-blue"}`} />
-              <h3 className="text-[14px] font-bold">{title}</h3>
+              <h3 className="text-[14px] font-bold leading-snug">{title}</h3>
+              <div className={`absolute bottom-0 left-0 w-full h-1 ${idx === 4 ? "bg-nexus-red" : "bg-nexus-blue"}`} />
             </div>
           ))}
         </div>

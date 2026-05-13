@@ -9,39 +9,37 @@ export default function LeadGenIndustries() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14">
         <div className="lg:pr-8 lg:border-r lg:border-[#E2E8F0]">
           <p className="text-[11px] uppercase tracking-[0.15em] text-nexus-blue font-semibold mb-4">LEAD GENERATION ACROSS INDUSTRIES</p>
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap items-start gap-8 mt-8">
             {([
-              [FiBriefcase, "Professional Services"],
+              [FiBriefcase, "Professional\nServices"],
               [FiHome, "Real Estate"],
               [FiHeart, "Healthcare"],
-              [FiTool, "Trades & Construction"],
+              [FiTool, "Trades &\nConstruction"],
               [FiShoppingCart, "eCommerce"],
             ] as const).map(([Icon, label]) => (
-              <div key={label as string} className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white border border-[#E2E8F0] text-[13px] text-nexus-navy">
-
-                <Icon className="text-nexus-blue" />
-                {label}
+              <div key={label as string} className="text-center flex flex-col items-center">
+                <Icon className="text-nexus-blue w-7 h-7 mb-3" />
+                <span className="text-[11px] font-bold text-nexus-navy whitespace-pre-line leading-tight">{label}</span>
               </div>
             ))}
           </div>
-          <p className="text-[14px] text-[#475569] mt-4">Any business. Any industry. We build systems that work.</p>
+          <p className="text-[14px] text-[#475569] mt-8 font-medium">Any business. Any industry. We build systems that work.</p>
         </div>
 
         <div>
           <p className="text-[11px] uppercase tracking-[0.15em] text-nexus-blue font-semibold mb-4">WHAT A LEAD GENERATION SYSTEM DELIVERS</p>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+          <div className="grid grid-cols-3 xl:grid-cols-6 gap-2 mt-8">
             {([
-              [FiRefreshCw, "Consistent Lead Flow"],
-              [FiTrendingUp, "Higher Conversion Rates"],
-              [FiUsers, "Better Quality Prospects"],
-              [FiClock, "Faster Response Times"],
-              [FiZap, "Automated Processes"],
-              [FiMaximize, "Scalable Growth"],
+              [FiRefreshCw, "Consistent\nLead Flow"],
+              [FiTrendingUp, "Higher\nConversion Rates"],
+              [FiUsers, "Better Quality\nProspects"],
+              [FiClock, "Faster\nResponse Times"],
+              [FiZap, "Automated\nProcesses"],
+              [FiMaximize, "Scalable\nGrowth"],
             ] as const).map(([Icon, label]) => (
-              <div key={label as string} className="bg-white border border-[#E2E8F0] rounded-xl p-3 text-center">
-
-                <Icon className="w-5 h-5 text-nexus-blue mx-auto mb-1" />
-                <p className="text-[12px] font-medium text-nexus-navy">{label}</p>
+              <div key={label as string} className="bg-transparent text-center flex flex-col items-center">
+                <Icon className="w-8 h-8 text-nexus-blue mx-auto mb-3" />
+                <p className="text-[11px] font-bold text-nexus-navy whitespace-pre-line leading-tight">{label}</p>
               </div>
             ))}
           </div>

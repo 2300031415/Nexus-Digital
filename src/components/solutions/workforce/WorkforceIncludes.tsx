@@ -13,9 +13,9 @@ export default function WorkforceIncludes() {
     <section className="py-20 px-8 text-center">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-[32px] font-bold mb-12">Your AI Workforce Includes</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div className="flex flex-wrap justify-center gap-6 max-w-5xl mx-auto">
           {workforceCards.map((card) => (
-            <div key={card.title} className="bg-white border border-[#E2E8F0] rounded-lg p-6 shadow-sm relative overflow-hidden">
+            <div key={card.title} className="bg-white border border-[#E2E8F0] rounded-lg p-6 shadow-sm relative overflow-hidden w-full md:w-[calc(33.33%-16px)]">
               <card.icon className="w-10 h-10 text-nexus-blue mx-auto mb-3" />
               <h3 className="text-[16px] font-bold mb-2">{card.title}</h3>
               <p className="text-[14px] text-[#475569]">{card.desc}</p>

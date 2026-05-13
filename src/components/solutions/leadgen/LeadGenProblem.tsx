@@ -23,17 +23,17 @@ export default function LeadGenProblem() {
           whileInView="show"
           viewport={{ once: true }}
           variants={{ hidden: {}, show: { transition: { staggerChildren: 0.08 } } }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-6 gap-4 lg:gap-6"
         >
           {problems.map(([Icon, title, desc]) => (
             <motion.div
               key={title}
               variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}
-              className="bg-white border border-gray-100 rounded-xl shadow-sm p-6 transition-all hover:shadow-lg hover:-translate-y-1"
+              className="bg-white border border-gray-100 rounded-xl shadow-sm p-4 lg:p-6 transition-all hover:shadow-lg hover:-translate-y-1 text-center"
             >
               <Icon className="w-10 h-10 text-nexus-blue mx-auto mb-4" />
-              <h3 className="text-[16px] font-semibold text-nexus-navy mb-2">{title}</h3>
-              <p className="text-[14px] text-[#475569]">{desc}</p>
+              <h3 className="text-[14px] font-semibold text-nexus-navy mb-2 leading-tight">{title}</h3>
+              <p className="text-[12px] text-[#475569] leading-relaxed">{desc}</p>
             </motion.div>
           ))}
         </motion.div>

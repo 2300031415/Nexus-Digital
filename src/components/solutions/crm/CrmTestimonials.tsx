@@ -36,10 +36,12 @@ export function CrmTestimonials() {
               <div className="flex gap-1 text-nexus-gold mb-3">{Array.from({ length: 5 }).map((_, i) => <FaStar key={i} className="w-4 h-4" />)}</div>
               <p className="text-sm italic text-gray-600 leading-relaxed mb-4">"{t.quote}"</p>
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-blue-100 text-nexus-blue text-sm font-bold flex items-center justify-center">{t.initials}</div>
+                <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-white shadow-sm shrink-0">
+                  <img src={`https://i.pravatar.cc/100?img=${40 + t.name.charCodeAt(0) % 20}`} alt={t.name} className="w-full h-full object-cover" />
+                </div>
                 <div>
                   <p className="text-sm font-semibold text-nexus-navy">{t.name}</p>
-                  <p className="text-xs text-gray-500">{t.company}</p>
+                  <p className="text-[11px] text-gray-500 uppercase tracking-wide">{t.company}</p>
                 </div>
               </div>
             </motion.div>

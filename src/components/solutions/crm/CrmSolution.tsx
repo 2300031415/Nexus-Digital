@@ -18,14 +18,14 @@ export function CrmSolution() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <p className="text-xs font-semibold tracking-widest uppercase text-nexus-blue mb-3">THE SOLUTION</p>
         <h2 className="text-3xl md:text-4xl font-bold text-nexus-navy mb-12">We Turn Your CRM Into a Revenue-Generating System</h2>
-        <motion.div initial="hidden" whileInView="show" viewport={{ once: true }} variants={{ hidden: {}, show: { transition: { staggerChildren: 0.1 } } }} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {features.map((f) => (
-            <motion.div key={f.title} variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }} className={`${f.highlight ? "bg-nexus-blue text-white border-nexus-blue" : "bg-white text-nexus-navy border-gray-100"} rounded-2xl shadow-sm border p-6 text-left`}>
-              <div className={`w-12 h-12 rounded-xl ${f.highlight ? "bg-white/20" : "bg-blue-50"} flex items-center justify-center mb-4`}>
-                <f.icon className={`w-6 h-6 ${f.highlight ? "text-white" : "text-nexus-blue"}`} />
+        <motion.div initial="hidden" whileInView="show" viewport={{ once: true }} variants={{ hidden: {}, show: { transition: { staggerChildren: 0.1 } } }} className="flex flex-col xl:flex-row bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+          {features.map((f, idx) => (
+            <motion.div key={f.title} variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }} className={`flex-1 p-5 lg:p-6 text-center flex flex-col items-center justify-start ${f.highlight ? "bg-[#F0F6FF] text-nexus-navy" : "bg-white text-nexus-navy"} ${idx !== features.length - 1 ? "border-b xl:border-b-0 xl:border-r border-gray-100" : ""}`}>
+              <div className={`w-12 h-12 rounded-full border ${f.highlight ? "bg-nexus-blue text-white border-nexus-blue" : "border-nexus-blue/20 text-nexus-blue bg-white"} flex items-center justify-center mb-4 shrink-0`}>
+                <f.icon className="w-5 h-5" />
               </div>
-              <h3 className="text-base font-semibold mb-2">{f.title}</h3>
-              <p className={`text-sm leading-relaxed ${f.highlight ? "text-white/90" : "text-gray-600"}`}>{f.desc}</p>
+              <h3 className={`text-[12px] font-bold mb-2 leading-tight ${f.highlight ? "text-nexus-blue" : ""}`}>{f.title}</h3>
+              <p className={`text-[11px] leading-relaxed text-gray-600`}>{f.desc}</p>
             </motion.div>
           ))}
         </motion.div>

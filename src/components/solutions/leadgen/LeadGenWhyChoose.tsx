@@ -67,23 +67,16 @@ export default function LeadGenWhyChoose() {
           </div>
         </div>
 
-        <div className="bg-nexus-navy rounded-2xl p-8 text-white">
-          <h3 className="text-center text-[16px] font-semibold mb-8">OUR LEAD GENERATION PROCESS</h3>
-          <div className="flex flex-col lg:flex-row items-start justify-between gap-4">
+        <div className="bg-nexus-navy rounded-2xl p-8 text-white relative">
+          <h3 className="text-center text-[16px] font-semibold mb-10">OUR LEAD GENERATION PROCESS</h3>
+          <div className="flex flex-col lg:flex-row items-start justify-between gap-4 relative">
+            <div className="hidden lg:block absolute top-5 left-[15%] right-[15%] h-0 border-t border-dashed border-white/30 z-0"></div>
             {processSteps.map(([num, Icon, title, desc], idx) => (
-              <div key={title} className="flex-1 flex flex-col lg:flex-row items-center lg:items-start gap-3">
-                <div className="text-center flex-1">
-                  <div className="w-10 h-10 bg-nexus-blue rounded-full mx-auto mb-3 flex items-center justify-center text-[14px] font-bold">{num}</div>
-
-                  <Icon className="w-5 h-5 mx-auto mb-2 text-white" />
-                  <p className="text-[12px] font-semibold mb-1">{title}</p>
-                  <p className="text-[11px] text-white/70">{desc}</p>
-                </div>
-                {idx < 2 && (
-                  <div className="hidden lg:flex items-center h-10 mt-0">
-                    <span className="text-nexus-blue text-xl font-bold">→</span>
-                  </div>
-                )}
+              <div key={title} className="flex-1 flex flex-col items-center text-center relative z-10 px-2">
+                <div className="w-10 h-10 bg-white text-nexus-navy rounded-full mb-4 flex items-center justify-center text-[14px] font-bold shadow-md">{num}</div>
+                <Icon className="w-6 h-6 mx-auto mb-3 text-white" />
+                <p className="text-[13px] font-semibold mb-2">{title}</p>
+                <p className="text-[11px] text-white/70 leading-relaxed">{desc}</p>
               </div>
             ))}
           </div>
@@ -91,19 +84,19 @@ export default function LeadGenWhyChoose() {
 
         <div>
           <p className="text-[11px] uppercase tracking-[0.15em] text-nexus-blue font-semibold mb-4">REAL RESULTS. REAL GROWTH.</p>
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-2">
             {stats.map((s, idx) => (
-              <div key={s.desc} className="bg-nexus-light-bg rounded-xl p-4 text-center">
-                <p className="text-[26px] font-extrabold text-nexus-blue">
+              <div key={s.desc} className={`bg-white p-4 text-center flex flex-col items-center justify-center ${idx % 2 === 0 ? 'border-r border-gray-100' : ''} ${idx < 2 ? 'border-b border-gray-100' : ''}`}>
+                <p className="text-[28px] font-bold text-nexus-blue mb-2">
                   {s.prefix}
                   {s.divideByTen ? (counts[idx] / 10).toFixed(1) : counts[idx]}
                   {s.suffix}
                 </p>
-                <p className="text-[11px] text-[#475569]">{s.desc}</p>
+                <p className="text-[10px] font-bold text-nexus-navy uppercase tracking-wider">{s.desc}</p>
               </div>
             ))}
           </div>
-          <div className="mt-4 text-center text-[12px] text-[#64748B] flex items-center justify-center gap-1">
+          <div className="mt-6 text-center text-[12px] text-[#64748B] flex items-center justify-center gap-1">
             <FiBarChart2 className="text-nexus-blue" />
             Performance measured in real client campaigns.
           </div>

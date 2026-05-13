@@ -48,7 +48,7 @@ const ProblemsSection = () => {
           Most Businesses Don't Know Where to Start With AI
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-6 gap-4 lg:gap-6">
           {problems.map((item, index) => {
             const Icon = item.icon;
             return (

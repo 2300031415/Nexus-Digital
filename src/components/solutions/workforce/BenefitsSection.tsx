@@ -15,12 +15,12 @@ export default function BenefitsSection() {
       <div className="max-w-7xl mx-auto">
         <span className="text-[11px] font-semibold tracking-widest uppercase text-nexus-blue block mb-4">WHY BUSINESSES CHOOSE AI</span>
         <h2 className="text-[32px] font-bold mb-10">The Benefits of an AI Workforce</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-6 gap-4">
           {benefits.map(([Icon, title, desc]) => (
-            <div key={title} className="bg-white border border-[#E2E8F0] rounded-lg p-6 text-center shadow-sm">
-              <Icon className="w-10 h-10 text-nexus-blue mx-auto mb-3" />
-              <h3 className="text-[14px] font-bold mb-2">{title}</h3>
-              <p className="text-[14px] text-[#475569]">{desc}</p>
+            <div key={title} className="bg-white border border-[#E2E8F0] rounded-lg p-5 text-center shadow-sm">
+              <Icon className="w-8 h-8 text-nexus-blue mx-auto mb-3" />
+              <h3 className="text-[13px] font-bold mb-2 leading-tight">{title}</h3>
+              <p className="text-[12px] text-[#475569] leading-relaxed">{desc}</p>
             </div>
           ))}
         </div>

@@ -3,33 +3,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { FiUsers, FiTarget, FiGlobe, FiSettings } from 'react-icons/fi';
+import { FiMessageCircle, FiPhoneCall, FiEdit3, FiBarChart2, FiSpeaker, FiSettings } from 'react-icons/fi';
 
 const solutions = [
-  {
-    icon: FiUsers,
-    title: "AI Workforce",
-    desc: "Deploy AI team members to handle support, operations, and repetitive business tasks.",
-    href: "/solutions/ai-workforce"
-  },
-  {
-    icon: FiTarget,
-    title: "Lead Generation System",
-    desc: "Capture, qualify, and follow up leads automatically to increase conversions.",
-    href: "/solutions/lead-generation"
-  },
-  {
-    icon: FiGlobe,
-    title: "Website + Marketing Packages",
-    desc: "Combine high-converting websites with performance marketing systems that drive growth.",
-    href: "/solutions/website-marketing-packages"
-  },
-  {
-    icon: FiSettings,
-    title: "CRM Automations",
-    desc: "Automate pipelines, reminders, and customer workflows inside your CRM.",
-    href: "/solutions/crm-automation"
-  }
+  { icon: FiMessageCircle, title: "AI Chatbots & Assistants", desc: "Handle enquiries, support customers, and assist your team 24/7." },
+  { icon: FiPhoneCall, title: "AI Receptionists", desc: "Answer calls, capture leads, and route enquiries instantly." },
+  { icon: FiEdit3, title: "AI Content Tools", desc: "Create high-quality content for marketing, websites, and campaigns." },
+  { icon: FiBarChart2, title: "AI Analytics Tools", desc: "Generate insights, reports, and forecasts automatically." },
+  { icon: FiSpeaker, title: "AI Marketing Tools", desc: "Optimise campaigns, improve targeting, and increase conversions." },
+  { icon: FiSettings, title: "AI Workflow Tools", desc: "Automate internal processes and eliminate repetitive tasks." }
 ];
 
 const SolutionSection = () => {
@@ -46,7 +28,7 @@ const SolutionSection = () => {
           At Nexus Digital Group, we cut through the noise. We identify, implement, and optimise AI tools that deliver real results across automation, marketing, sales, customer service, and operations.
         </p>
 
-        <div className="flex flex-wrap justify-center gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6">
           {solutions.map((item, index) => {
             const Icon = item.icon;
             return (
@@ -56,22 +38,20 @@ const SolutionSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                whileHover={{ scale: 1.03 }}
+                whileHover={{ y: -5 }}
+                className="bg-white border border-[#E2E8F0] rounded-2xl p-6 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-all h-full"
               >
-                <Link
-                  href={item.href}
-                  className="inline-flex items-center gap-2 px-5 py-3 rounded-full border text-[14px] font-semibold transition-all bg-white text-[#0F172A] border-[#E2E8F0] hover:border-nexus-blue hover:text-nexus-blue hover:shadow-sm"
-                >
-                  <Icon className="w-4 h-4" />
-                  {item.title}
-                </Link>
+                <Icon className="w-10 h-10 text-nexus-blue mb-4 flex-shrink-0" />
+                <h3 className="text-[15px] font-bold text-[#0F172A] mb-3 leading-tight">{item.title}</h3>
+                <p className="text-[13px] text-[#475569] leading-relaxed mb-6">{item.desc}</p>
+                <div className="mt-auto w-8 h-1 bg-nexus-green rounded-full flex-shrink-0" />
               </motion.div>
             );
           })}
         </div>
         
-        <p className="mt-12 text-[15px] text-[#475569] font-semibold italic">
-          "We select the right tools for your business — not just popular ones."
+        <p className="mt-12 text-[16px] text-nexus-blue font-bold">
+          We select the right tools for your business — not just popular ones.
         </p>
       </div>
     </section>

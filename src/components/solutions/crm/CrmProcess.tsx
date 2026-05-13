@@ -26,23 +26,16 @@ export function CrmProcess() {
           </div>
         </div>
 
-        <div className="bg-nexus-navy text-white rounded-2xl p-6">
-          <h3 className="text-lg font-semibold text-center mb-6">OUR CRM IMPLEMENTATION PROCESS</h3>
-          <div className="flex flex-col md:flex-row items-start justify-between gap-4">
+        <div className="bg-white rounded-2xl p-6">
+          <h3 className="text-center text-xs font-semibold tracking-widest uppercase text-nexus-blue mb-8">OUR CRM IMPLEMENTATION PROCESS</h3>
+          <div className="flex flex-col lg:flex-row items-start justify-between gap-4 relative">
+            <div className="hidden lg:block absolute top-5 left-[15%] right-[15%] h-0 border-t border-dashed border-nexus-blue/30 z-0"></div>
             {PROCESS_STEPS.map(([n, Icon, title, desc], idx) => (
-              <div key={String(title)} className="flex-1 flex flex-col md:flex-row items-center md:items-start gap-3">
-                <div className="text-center flex-1">
-                  <div className="w-10 h-10 rounded-full bg-nexus-blue mx-auto mb-3 flex items-center justify-center font-bold text-white text-sm">{n}</div>
-                  
-                  <Icon className="w-5 h-5 mx-auto mb-2 text-white" />
-                  <p className="text-xs font-semibold mb-1">{title}</p>
-                  <p className="text-[10px] text-white/70">{desc}</p>
-                </div>
-                {idx < 2 && (
-                  <div className="hidden md:flex items-center h-10 mt-0">
-                    <span className="text-nexus-blue text-xl font-bold">→</span>
-                  </div>
-                )}
+              <div key={String(title)} className="flex-1 flex flex-col items-center text-center relative z-10 px-2">
+                <div className="w-10 h-10 rounded-full bg-nexus-blue mx-auto mb-4 flex items-center justify-center font-bold text-white text-sm shadow-md border-4 border-white">{n}</div>
+                <Icon className="w-6 h-6 mx-auto mb-2 text-nexus-blue" />
+                <p className="text-[13px] font-bold text-nexus-navy mb-1 leading-tight">{title}</p>
+                <p className="text-[11px] text-gray-600 leading-relaxed">{desc}</p>
               </div>
             ))}
           </div>

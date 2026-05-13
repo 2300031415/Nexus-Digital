@@ -24,10 +24,12 @@ export function PackagesCTA() {
           >
             Book Your Free Strategy Call →
           </motion.button>
-          <div className="flex items-center gap-2">
-            <div className="flex">
-              {["from-blue-400 to-blue-600", "from-green-400 to-green-600", "from-purple-400 to-purple-600", "from-orange-400 to-orange-600"].map((g, i) => (
-                <div key={i} className={`w-8 h-8 rounded-full bg-gradient-to-br ${g} border-2 border-nexus-navy ${i > 0 ? "-ml-2" : ""}`} />
+          <div className="flex items-center gap-3">
+            <div className="flex -space-x-3">
+              {[33, 47, 12, 5].map((imgId) => (
+                <div key={imgId} className="w-9 h-9 rounded-full bg-gray-300 border-2 border-nexus-navy overflow-hidden">
+                  <img src={`https://i.pravatar.cc/100?img=${imgId}`} alt="Client" className="w-full h-full object-cover" />
+                </div>
               ))}
             </div>
             <p className="text-gray-400 text-sm">Join 100+ Australian businesses growing with Nexus.</p>

@@ -21,49 +21,47 @@ export function CrmPlatforms() {
           <p className="text-gray-600 text-base leading-relaxed mb-6">
             We work with leading CRM platforms or build custom solutions to fit your business needs.
           </p>
-          <div className="grid grid-cols-2 gap-4 mt-6">
+          <div className="grid grid-cols-4 gap-3 mt-6">
             <div className="flex flex-col items-center gap-2">
-              <div className="h-20 w-full flex items-center justify-center p-3 bg-white rounded-xl shadow-sm border border-gray-100">
-                <Image src="/Catalog/Hub spot.png" alt="HubSpot" width={140} height={60} className="h-10 w-auto object-contain" />
+              <div className="h-16 w-full flex items-center justify-center p-2 bg-white rounded-xl shadow-sm border border-gray-100">
+                <Image src="/Catalog/Hub spot.png" alt="HubSpot" width={100} height={40} className="h-8 w-auto object-contain" />
               </div>
-              <span className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Partner</span>
+              <span className="text-[9px] font-bold text-gray-400 uppercase tracking-wider text-center">Partner</span>
             </div>
             <div className="flex flex-col items-center gap-2">
-              <div className="h-20 w-full flex items-center justify-center p-3 bg-white rounded-xl shadow-sm border border-gray-100">
-                <Image src="/Catalog/salesforce.png" alt="Salesforce" width={140} height={60} className="h-12 w-auto object-contain" />
+              <div className="h-16 w-full flex items-center justify-center p-2 bg-white rounded-xl shadow-sm border border-gray-100">
+                <Image src="/Catalog/salesforce.png" alt="Salesforce" width={100} height={40} className="h-8 w-auto object-contain" />
               </div>
-              <span className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Integration</span>
+              <span className="text-[9px] font-bold text-gray-400 uppercase tracking-wider text-center">Integration</span>
             </div>
             <div className="flex flex-col items-center gap-2">
-              <div className="h-20 w-full flex items-center justify-center p-3 bg-white rounded-xl shadow-sm border border-gray-100">
-                <Image src="/Catalog/zoho.png" alt="Zoho" width={140} height={60} className="h-10 w-auto object-contain" />
+              <div className="h-16 w-full flex items-center justify-center p-2 bg-white rounded-xl shadow-sm border border-gray-100">
+                <Image src="/Catalog/zoho.png" alt="Zoho" width={100} height={40} className="h-7 w-auto object-contain" />
               </div>
-              <span className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Certified</span>
+              <span className="text-[9px] font-bold text-gray-400 uppercase tracking-wider text-center">Certified</span>
             </div>
             <div className="flex flex-col items-center gap-2">
-              <div className="h-20 w-full flex items-center justify-center p-3 bg-white rounded-xl shadow-sm border border-gray-100">
-                <div className="flex items-center gap-2">
-                  <FiGitMerge className="text-nexus-blue w-6 h-6" />
-                  <span className="text-sm font-bold text-nexus-navy">Custom Systems</span>
+              <div className="h-16 w-full flex items-center justify-center p-2 bg-white rounded-xl shadow-sm border border-gray-100">
+                <div className="flex items-center justify-center flex-col gap-1">
+                  <FiGitMerge className="text-nexus-blue w-5 h-5" />
+                  <span className="text-[10px] font-bold text-nexus-navy text-center leading-tight">Custom<br/>Systems</span>
                 </div>
               </div>
-              <span className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Bespoke</span>
+              <span className="text-[9px] font-bold text-gray-400 uppercase tracking-wider text-center">Bespoke</span>
             </div>
           </div>
         </div>
 
         <div>
           <p className="text-xs font-semibold tracking-widest uppercase text-nexus-blue mb-4">WHAT WE AUTOMATE INSIDE YOUR CRM</p>
-          <div className="space-y-3">
+          <div className="flex items-start justify-between gap-3 overflow-x-auto pb-2 mt-6">
             {automations.map((a) => (
-              <div key={a.title} className="bg-white rounded-2xl shadow-sm border border-gray-100 p-4 flex gap-3">
-                <div className="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center shrink-0">
+              <div key={a.title} className="flex-1 min-w-[110px] text-center flex flex-col items-center">
+                <div className="w-10 h-10 rounded-full border border-nexus-blue/20 flex items-center justify-center mb-3 bg-white shadow-sm">
                   <a.icon className="w-5 h-5 text-nexus-blue" />
                 </div>
-                <div>
-                  <h3 className="text-sm font-semibold text-nexus-navy">{a.title}</h3>
-                  <p className="text-xs text-gray-600 mt-1">{a.desc}</p>
-                </div>
+                <h3 className="text-[11px] font-bold text-nexus-navy mb-1 leading-tight">{a.title}</h3>
+                <p className="text-[9px] text-gray-500 leading-relaxed">{a.desc}</p>
               </div>
             ))}
           </div>

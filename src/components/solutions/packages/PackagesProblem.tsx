@@ -18,14 +18,14 @@ export function PackagesProblem() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <p className="text-xs font-semibold tracking-widest uppercase text-nexus-blue mb-3">THE PROBLEM</p>
         <h2 className="text-3xl font-bold text-nexus-dark mb-12">Most Businesses Are Piecing Together Tools That Don&apos;t Work</h2>
-        <motion.div initial="hidden" whileInView="show" viewport={{ once: true }} variants={{ hidden: {}, show: { transition: { staggerChildren: 0.08 } } }} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {problems.map((p) => (
-            <motion.div key={p.title} variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }} className="bg-white border border-gray-100 rounded-xl shadow-sm p-6 text-center hover:shadow-lg hover:-translate-y-1 transition-all">
-              <div className="w-12 h-12 rounded-full bg-blue-50 p-3 mx-auto mb-3">
-                <p.icon className="w-full h-full text-nexus-blue" />
+        <motion.div initial="hidden" whileInView="show" viewport={{ once: true }} variants={{ hidden: {}, show: { transition: { staggerChildren: 0.1 } } }} className="grid grid-cols-1 sm:grid-cols-3 xl:grid-cols-6 gap-0 border border-gray-100 rounded-2xl bg-white shadow-sm overflow-hidden mt-10">
+          {problems.map((p, idx) => (
+            <motion.div key={p.title} variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }} className={`p-5 lg:p-6 text-center ${idx !== problems.length - 1 ? 'border-b sm:border-b-0 sm:border-r border-gray-100' : ''}`}>
+              <div className="w-10 h-10 flex items-center justify-center mx-auto mb-4">
+                <p.icon className="w-8 h-8 text-nexus-blue" />
               </div>
-              <h3 className="text-base font-semibold text-nexus-dark mb-2">{p.title}</h3>
-              <p className="text-sm text-gray-500">{p.desc}</p>
+              <h3 className="text-[13px] font-bold text-nexus-dark mb-2 leading-tight">{p.title}</h3>
+              <p className="text-[11px] text-gray-500 leading-relaxed">{p.desc}</p>
             </motion.div>
           ))}
         </motion.div>

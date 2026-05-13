@@ -38,10 +38,12 @@ export function PackagesTestimonials() {
               <div className="flex gap-0.5 text-yellow-400 mb-4">{Array.from({ length: 5 }).map((_, i) => <FaStar key={i} className="text-lg" />)}</div>
               <p className="text-gray-600 italic text-sm">{t.quote}</p>
               <div className="flex items-center gap-3 mt-4">
-                <div className={`w-10 h-10 rounded-full bg-gradient-to-br ${t.avatar} text-white font-bold flex items-center justify-center`}>{t.initial}</div>
+                <div className={`w-10 h-10 rounded-full overflow-hidden border-2 border-gray-100 shadow-sm shrink-0`}>
+                  <img src={`https://i.pravatar.cc/100?img=${50 + t.name.charCodeAt(0) % 20}`} alt={t.name} className="w-full h-full object-cover" />
+                </div>
                 <div>
                   <p className="font-semibold text-nexus-dark">{t.name}</p>
-                  <p className="text-xs text-gray-500">{t.role}</p>
+                  <p className="text-[11px] text-gray-500 uppercase tracking-wide">{t.role}</p>
                 </div>
               </div>
             </motion.div>

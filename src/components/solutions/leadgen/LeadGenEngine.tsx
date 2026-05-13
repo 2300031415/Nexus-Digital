@@ -23,17 +23,19 @@ export default function LeadGenEngine() {
             Our proven system attracts the right people, qualifies them, and converts them into loyal customers - automatically.
           </p>
         </div>
-        <div className="overflow-x-auto">
-          <div className="min-w-[980px] flex items-center gap-3">
+        <div className="overflow-x-auto pb-4">
+          <div className="min-w-[980px] flex items-center justify-between">
             {steps.map(([Icon, label], idx) => (
-              <div key={label} className="flex items-center gap-3">
-                <div className="text-center w-[150px]">
-                  <div className="w-12 h-12 rounded-full bg-nexus-blue flex items-center justify-center mx-auto mb-2">
-                    <Icon className="text-white w-6 h-6" />
+              <div key={label} className="flex items-center gap-0 flex-1">
+                <div className="text-center w-[130px] shrink-0 relative z-10">
+                  <div className="w-16 h-16 rounded-full bg-[#F8FAFC] border-2 border-nexus-blue/20 flex items-center justify-center mx-auto mb-3">
+                    <Icon className="text-nexus-blue w-7 h-7" />
                   </div>
-                  <p className="text-[12px] font-semibold text-nexus-navy">{label}</p>
+                  <p className="text-[12px] font-bold text-nexus-navy leading-tight px-2">{label}</p>
                 </div>
-                {idx < steps.length - 1 && <span className="text-nexus-blue text-xl font-bold border-b-2 border-dashed border-nexus-blue pb-1">→</span>}
+                {idx < steps.length - 1 && (
+                  <div className="flex-1 h-0 border-t-2 border-dashed border-nexus-blue mb-10 mx-2 opacity-50 relative z-0"></div>
+                )}
               </div>
             ))}
           </div>

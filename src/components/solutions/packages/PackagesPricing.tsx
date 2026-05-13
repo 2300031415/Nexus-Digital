@@ -107,7 +107,7 @@ export function PackagesPricing() {
                 <p className={`font-semibold ${p.popular ? "text-white" : "text-nexus-dark"}`}>Outcome:</p>
                 <p className={`${p.popular ? "text-blue-200" : "text-gray-600"} text-sm`}>{p.outcome}</p>
               </div>
-              <button className={`mt-6 w-full py-3 rounded-xl transition ${p.popular ? "bg-nexus-green text-white font-bold hover:brightness-110" : "border border-nexus-blue text-nexus-blue hover:bg-nexus-blue hover:text-white"}`}>
+              <button className={`mt-6 w-full py-3 rounded-xl transition font-semibold ${p.popular ? "bg-nexus-blue text-white hover:brightness-110" : "border border-nexus-blue/30 text-nexus-blue hover:bg-nexus-blue hover:text-white"}`}>
                 {p.cta}
               </button>
             </motion.div>
